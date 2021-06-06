@@ -21,8 +21,16 @@ header{
     
 }
 
+header h1 {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: whitesmoke;
+    font-size: 1.0em;
+    letter-spacing: -0.025em;
+    margin: 0 auto;
+}
+
 .wrapper{
-    color:white
+    color:white;
 }
 
 div.clear {
@@ -35,25 +43,23 @@ nav{
     font-size: 1.7em;
     letter-spacing: 0.04em;
     background-color: transparent;
+    height: 150px;
+    text-align: center;
    }
 
 nav img{
     border-radius: 5%;
+
+    
 }
 
-header h1 {
-    font-family: Tahoma, Geneva, sans-serif;
-    color: whitesmoke;
-    font-size: 1.0em;
-    letter-spacing: -0.025em;
-    margin: 0 auto;
-}
+
 
 .center{
  display:inline-block;
  margin: 0 auto;
  width: 33.33%;
- text-align:center;
+ height: 150px;
 }
 
 .right{
@@ -68,6 +74,31 @@ header h1 {
     text-align: left;
 
 }
+.announcement{
+    width: 100%;
+    height:150px;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(Assets/wet_hops_2.jpg);
+    border:2px solid transparent;
+    border-radius: 10px;
+    color:white;
+    position: relative;
+    text-align: center;
+
+    
+}
+.announcement .sub{
+    font-size: 75%;
+    bottom: 0;
+    position: absolute;
+
+
+    
+       
+}
+/*****Side bar***********/
 
 #sidebar {
     width: 240px;
@@ -80,6 +111,45 @@ header h1 {
     border-bottom: #2BA967 solid 2px;
     
 }
+
+/***main section and component elements*/
+
+section #main {
+    background-color: rgba(252,251,243,0.7);
+    margin: 0 0.5em 2.0em;
+    padding: 1.5em 0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px #777; /*offset-x, 0ffset -y, blur radius, color*/
+}
+
+section div.card {
+    float:right;
+    position: relative;
+    width: 300px;
+    margin: 0.5em 2.0em 2.0em 0.5em;
+    background-color:black;
+    border: #ccc solid 1px;
+    border-radius: 0.6em;
+}
+
+.hopselect{
+    width: 100%;
+    height:250px;
+    }
+
+.card_title {
+    font-family: Tahoma, Geneva, sans-serif;
+    color:black;
+    font-size: 1.0em;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    margin-left: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+
+}
+
 
 
 
