@@ -3,7 +3,7 @@ body{
     font-family: Tahoma, Geneva, sans-serif;
     background: white url(Assets/old-wooden-background-wooden-table-floor-hops_158023-102.jpg) no-repeat fixed top center;
     padding: 0;
-    margin: padding:0 4.0em;;
+    margin: padding:0 4.0em;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -60,7 +60,7 @@ nav img{
  margin: 0 auto;
  width: 33.33%;
  height: 150px;
-}
+ }
 
 .right{
     float:right;
@@ -85,18 +85,15 @@ nav img{
     border-radius: 10px;
     color:white;
     position: relative;
-    text-align: center;
-
+   
     
 }
-.announcement .sub{
+.sub_text{
+    position:absolute;
     font-size: 75%;
+    margin:auto;
     bottom: 0;
-    position: absolute;
-
-
-    
-       
+    width:100%
 }
 /*****Side bar***********/
 
