@@ -33,6 +33,14 @@ header h1 {
     color:white;
 }
 
+#recipe_title{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: whitesmoke;
+    font-size: 1.0em;
+    letter-spacing: -0.025em;
+    position:absolute;
+}
+
 div.clear {
     clear: both;
     font-size: 1%;
@@ -43,23 +51,20 @@ nav{
     font-size: 1.7em;
     letter-spacing: 0.04em;
     background-color: transparent;
-    height: 150px;
+    height: 155px;
     text-align: center;
-   }
-
-nav img{
-    border-radius: 5%;
-
     
 }
 
-
+nav img{
+    border-radius: 5%;
+ }
 
 .center{
  display:inline-block;
- margin: 0 auto;
  width: 33.33%;
  height: 150px;
+ 
  }
 
 .right{
@@ -76,12 +81,11 @@ nav img{
 }
 .announcement{
     width: 100%;
-    height:150px;
+    height:100%;
     background-image:linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ), url(Assets/wet_hops_2.jpg);
-    border:2px solid transparent;
     border-radius: 10px;
     color:white;
     position: relative;
@@ -93,15 +97,24 @@ nav img{
     font-size: 75%;
     margin:auto;
     bottom: 0;
-    width:100%
+    width:100%;
 }
 /*****Side bar***********/
-
-#sidebar {
+section#sidebar {
     width: 240px;
     float: left;
     position: relative;
     display: block;
+    background-color:black;
+    margin:auto;
+    border-right: #2BA967 solid 4px;
+    border-bottom: #2BA967 solid 2px;
+        
+}
+
+#recipe {
+    width: 240px;
+    position:absolute;
     background-color:black;
     margin:auto;
     border-right: #2BA967 solid 4px;
@@ -121,7 +134,7 @@ section #main {
 }
 
 section div.card {
-    float:right;
+    float:left;
     position: relative;
     width: 300px;
     margin: 0.5em 2.0em 2.0em 0.5em;
@@ -129,6 +142,7 @@ section div.card {
     border: #ccc solid 1px;
     border-radius: 0.6em;
 }
+
 
 .hopselect{
     width: 100%;
