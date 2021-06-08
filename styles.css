@@ -33,17 +33,20 @@ header h1 {
     color:white;
 }
 
-#recipe_title{
-    font-family: Tahoma, Geneva, sans-serif;
-    color: whitesmoke;
-    font-size: 1.0em;
-    letter-spacing: -0.025em;
-    position:absolute;
-}
+
 
 div.clear {
     clear: both;
     font-size: 1%;
+}
+/****column layout*****/
+.layout {
+    column-count:1;
+    break-inside: avoid;
+}
+
+#columnnbreak{
+    break-before: always;
 }
 /************Nav bars***********************/
 nav{
@@ -100,11 +103,11 @@ nav img{
     width:100%;
 }
 /*****Side bar***********/
-section#sidebar {
+ .sidebar {
     width: 240px;
     float: left;
     position: relative;
-    display: block;
+    /*display: block;*/
     background-color:black;
     margin:auto;
     border-right: #2BA967 solid 4px;
@@ -112,14 +115,8 @@ section#sidebar {
         
 }
 
-#recipe {
-    width: 240px;
-    position:absolute;
-    background-color:black;
-    margin:auto;
-    border-right: #2BA967 solid 4px;
-    border-bottom: #2BA967 solid 2px;
-    
+.section_title{
+    font-size: 1.6em;
 }
 
 /***main section and component elements*/
@@ -130,7 +127,7 @@ section #main {
     padding: 1.5em 0 2.0em 1.5em;
     display: inline-block;
     border-radius: 2em;
-    box-shadow: 1px 1px 5px #777; /*offset-x, 0ffset -y, blur radius, color*/
+    box-shadow: 1px 1px 5px #777;
 }
 
 section div.card {
@@ -141,6 +138,7 @@ section div.card {
     background-color:black;
     border: #ccc solid 1px;
     border-radius: 0.6em;
+    padding-bottom: 5em;
 }
 
 
@@ -151,17 +149,28 @@ section div.card {
 
 .card_title {
     font-family: Tahoma, Geneva, sans-serif;
-    color:black;
-    font-size: 1.0em;
+    color:whitesmoke;
+    font-size: 1.7em;
     font-weight: bold;
     letter-spacing: -0.025em;
-    margin-left: 250px;
-    background-color: rgba(255, 255, 255, 0.5);
+    width:75%;
+    background-color:rgba(0, 0, 0, 0.5);
+    border: 1.5px solid transparent
+    border-radius: .25em;
+    display: inline-block;
 
-
+       
 }
 
+/*footer sections*/
 
-
-
-
+footer {
+    background-color: #40362f;
+    height: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 2.0em;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,65,1) 61%, rgba(0,255,145,1) 100%);
+}
