@@ -12,28 +12,13 @@ body{
 }
 
 
-header{
-        margin: 0 0 0 0;
-        padding: .5em 0 2.5em 0.25em;
-        border-bottom: white solid 1px;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,65,1) 61%, rgba(0,255,145,1) 100%);
-    
+a:hover {
+    color: lightblue;
+    text-decoration: underline;
 }
-
-header h1 {
-    font-family: Tahoma, Geneva, sans-serif;
-    color: whitesmoke;
-    font-size: 1.0em;
-    letter-spacing: -0.025em;
-    margin: 0 auto;
-}
-
 .wrapper{
     color:white;
 }
-
-
 
 div.clear {
     clear: both;
@@ -48,25 +33,85 @@ div.clear {
 #columnnbreak{
     break-before: always;
 }
+/************page head**************/
+header{
+    margin: 0 0 0 0;
+    height: 2.0em;
+    padding: 0.5em 0 1.5em 0.1em;
+    border-bottom: white solid 1px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,65,1) 61%, rgba(0,255,145,1) 100%);
+    
+
+}
+
+
+header h1 {
+font-family: Tahoma, Geneva, sans-serif;
+color: yellow;
+font-size: 1.5em;
+letter-spacing: -0.025em;
+text-align:center;
+padding:0;
+
+}
+
+header ul {
+    margin: 0;
+    padding:0 ;
+    list-style: none;
+    text-align: left;
+}
+
+header ul li{
+    display:inline-block;
+    padding:0 0.7em 0 0;
+    margin: 0;
+
+    
+}
+
+header ul img{
+    height: 32px;
+    width: 32px;
+}
+
+
+
+header ul li a img:hover {
+    color: #C64322;
+    background-color: rgba(252,251,243,0.75);
+}
+
+header ul li::before {
+    padding-right: 0.7em;
+}
 /************Nav bars***********************/
 nav{
     color: white;
     font-size: 1.7em;
     letter-spacing: 0.04em;
-    background-color: transparent;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      );
     height: 155px;
     text-align: center;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    border-bottom: 1px solid white;
     
 }
 
 nav img{
     border-radius: 5%;
+    height:150px;
  }
 
 .center{
  display:inline-block;
  width: 33.33%;
- height: 150px;
+ height:97%;
  
  }
 
@@ -80,7 +125,7 @@ nav img{
     float:left;
     width: 33.33%;
     text-align: left;
-
+    
 }
 .announcement{
     width: 100%;
@@ -102,6 +147,13 @@ nav img{
     bottom: 0;
     width:100%;
 }
+
+nav ul{
+
+      list-style: none;
+      margin:auto;
+    
+}
 /*****Side bar***********/
  .sidebar {
     width: 240px;
@@ -117,6 +169,7 @@ nav img{
 
 .section_title{
     font-size: 1.6em;
+    color:yellow;
 }
 
 /***main section and component elements*/
@@ -138,13 +191,13 @@ section div.card {
     background-color:black;
     border: #ccc solid 1px;
     border-radius: 0.6em;
-    padding-bottom: 5em;
+    padding-bottom: 2.0em;
 }
 
 
 .hopselect{
     width: 100%;
-    height:250px;
+    height:275px;
     }
 
 .card_title {
@@ -155,7 +208,7 @@ section div.card {
     letter-spacing: -0.025em;
     width:75%;
     background-color:rgba(0, 0, 0, 0.5);
-    border: 1.5px solid transparent
+    border: 1.5px solid transparent;
     border-radius: .25em;
     display: inline-block;
 
@@ -173,4 +226,54 @@ footer {
     padding: 1.5em 2.0em;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,65,1) 61%, rgba(0,255,145,1) 100%);
+}
+
+footer ul#menuFooter {
+    display:inline-block;
+    list-style: none;
+
+    margin: 0 0 0 0.6em;
+    padding:0;
+    
+}
+
+footer ul li{
+    display:inline-block;
+    padding:0 0.7em 0 0;
+    margin: 0;
+    
+}
+
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+   
+
+}
+
+
+
+/*Misc Stuff*/
+button {
+    color:black;
+    background-color: #FFF;
+    margin: 1.0em .75em 0 0;
+    padding: 0.2em 0.5em;
+    border: 2px solid blue;
+    float:right;
+    
+}
+
+button:hover {
+    background-color: #cde75a;
+    border: 1px solid rgb(0, 255, 255);
+    color:brown;
+}
+
+.light_anchor{
+    color:yellowgreen
+}
+
+.heavy_anchor{
+    color:yellow;
 }
