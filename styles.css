@@ -1,9 +1,9 @@
 body{
     font-size: 67.5%;
     font-family: Tahoma, Geneva, sans-serif;
-    background: white url(Assets/old-wooden-background-wooden-table-floor-hops_158023-102.jpg) no-repeat fixed top center;
+    background: white url(Assets/andre-klimke-qCtoja13wLw-unsplash.jpg) no-repeat fixed top center;
     padding: 0;
-    margin: 0 4.0em;
+    margin: 0;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -18,6 +18,7 @@ a:hover {
 }
 .wrapper{
     color:white;
+    padding: 0 1.5em 0 1.5em;
 }
 
 div.clear {
@@ -53,6 +54,7 @@ font-size: 1.5em;
 letter-spacing: -0.025em;
 text-align:center;
 padding:0;
+margin:auto;
 
 }
 
@@ -74,6 +76,7 @@ header ul li{
 header ul img{
     height: 32px;
     width: 32px;
+    border-radius: .25em;
 }
 
 
@@ -103,6 +106,33 @@ nav{
     
 }
 
+nav ul{
+
+    list-style: none;
+    margin:auto;
+}
+
+nav ul li{
+    display: inline-block;
+    padding:0 0 0 0;
+    margin: 0;
+}
+
+nav ul li:after {
+    padding:0 0.5em 0 1.0em;
+    content: '|';
+}
+
+nav li:last-child::after {
+    display: none
+  }
+
+nav ul li a img{
+    height: 32px;
+    width:32px;
+    vertical-align:middle;
+    padding-right:1.0em
+}
 nav img{
     border-radius: 5%;
     height:150px;
@@ -110,20 +140,21 @@ nav img{
 
 .center{
  display:inline-block;
- width: 33.33%;
+ width: 50%;
  height:97%;
+ 
  
  }
 
 .right{
     float:right;
-    width:33.33%;
-    text-align:right
+    width:25%;
+    text-align:right;
 }
 
 .left{
     float:left;
-    width: 33.33%;
+    width: 25%;
     text-align: left;
     
 }
@@ -133,30 +164,23 @@ nav img{
     background-image:linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-      ), url(Assets/wet_hops_2.jpg);
+      ), url(Assets/young_hops.PNG);
     border-radius: 10px;
-    color:white;
-    position: relative;
-   
+    border: 1.5px solid orange;
     
-}
-.sub_text{
-    position:absolute;
-    font-size: 75%;
-    margin:auto;
-    bottom: 0;
-    width:100%;
-}
+}    
 
-nav ul{
+#announce-text{
+        font-size: 1.75em;
+    }
 
-      list-style: none;
-      margin:auto;
-    
+#sub-text{
+    color:yellow;
+    font-weight: bold;
 }
 /*****Side bar***********/
  .sidebar {
-    width: 240px;
+    width: 15%;
     float: left;
     position: relative;
     /*display: block;*/
@@ -184,9 +208,9 @@ section #main {
 }
 
 section div.card {
-    float:left;
+    float:right;
     position: relative;
-    width: 300px;
+    width: 25%;
     margin: 0.5em 2.0em 2.0em 0.5em;
     background-color:black;
     border: #ccc solid 1px;
@@ -197,8 +221,8 @@ section div.card {
 
 .hopselect{
     width: 100%;
-    height:275px;
-    }
+    height:25em;
+}
 
 .card_title {
     font-family: Tahoma, Geneva, sans-serif;
@@ -206,7 +230,7 @@ section div.card {
     font-size: 1.7em;
     font-weight: bold;
     letter-spacing: -0.025em;
-    width:75%;
+    width:80%;
     background-color:rgba(0, 0, 0, 0.5);
     border: 1.5px solid transparent;
     border-radius: .25em;
@@ -251,8 +275,6 @@ footer ul li::before {
 
 }
 
-
-
 /*Misc Stuff*/
 button {
     color:black;
@@ -271,9 +293,11 @@ button:hover {
 }
 
 .light_anchor{
-    color:yellowgreen
+    color:yellowgreen;
+    text-decoration: none;
 }
 
 .heavy_anchor{
     color:yellow;
+    text-decoration: none;
 }
